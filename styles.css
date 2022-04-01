@@ -1,9 +1,9 @@
 
-/*
+
  * {
     border: red 1px solid
 }
-*/
+
 
 body {
     margin: 0;
@@ -76,6 +76,26 @@ h1 {
     flex-grow: 1;
     left-margin: 32px;
     min-width: 412px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.illustrations {
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.box {
+    height: 100px;
+    width: auto;
+    border: #3882f6;
+    border-radius: 15px;
 }
 
 button {
