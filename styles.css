@@ -1,0 +1,43 @@
+* {
+    border: red 1px solid
+}
+
+body {
+margin: 0 64px;
+
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+ 
+.hero,
+.header {
+    background-color: #1f2937;
+    color: #F9FAF8
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
