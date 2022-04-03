@@ -1,8 +1,19 @@
 
+/* shortcut for commenting is ctrl+/ */
 
- * {
+
+ /* * {
     border: red 1px solid
+} */
+
+/*/// Utility Selectors ///*/
+
+.flex {
+    display: flex;
 }
+
+
+/*/// Selectors ///*/
 
 
 body {
@@ -19,6 +30,13 @@ h1 {
     padding: 0;
     margin: 0;
 }
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
  
 .hero,
 .header {
@@ -30,8 +48,8 @@ h1 {
 
 .header {
     display: flex;
-    
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .logo {
@@ -64,7 +82,7 @@ h1 {
     flex-basis: 100%;
 }
 
-.greeting-text {
+.greeting-text p {
 
 }
 
@@ -74,28 +92,32 @@ h1 {
     align-items: center;
     background-color: gray;
     flex-grow: 1;
-    left-margin: 32px;
+    margin-left: 32px;
     min-width: 412px;
 }
 
 .information {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .illustrations {
     display: flex;
     flex-shrink: 1;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
     height: 150px;
+    padding: 0px 400px;
+    gap: 30px;
 }
 
 .box {
     height: 100px;
-    width: auto;
-    border: #3882f6;
+    width: 100px;
+    border: #3882f6 solid 3px;
     border-radius: 15px;
+    flex-shrink: 0;
+    color: white;
 }
 
 button {
@@ -103,4 +125,20 @@ button {
     color: #F9FAF8;
     border-radius: 5px;
     padding: 5px 25px;
+}
+
+.box-text {
+    overflow-wrap: normal;
+    width: 100px;
+    text-align: center;
+    font-size: 10px;
+    color: #1f2937
+}
+
+.grouped {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100px;
 }
